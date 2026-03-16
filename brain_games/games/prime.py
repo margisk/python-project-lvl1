@@ -11,8 +11,9 @@ def generate_qa_pair() -> tuple:
 
 
 def check_if_prime_explicit(number):
+    if number == 1:
+        return 'no'
     for divisor in range(2, ceil(sqrt(number))):
         if number % divisor == 0:
             return "no"
-    else:
-        return "yes"
+    return "yes"
