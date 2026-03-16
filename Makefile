@@ -25,6 +25,9 @@ brain-gcd:
 brain-prime:
 	uv run brain-prime
 
+brain-progression:
+	uv run brain-progression
+
 lint:
 	uv run ruff check brain_games
 

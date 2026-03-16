@@ -8,15 +8,15 @@ def generate_qa_pair() -> tuple:
 	position_to_hide = randint(1, len(progression) - 1)
 	answer = progression[position_to_hide]
 	progression[position_to_hide] = '..'
-	return (progression, str(answer))
+	return (' '.join(progression), str(answer))
 
 
 def generate_arithmetic_progression() -> list:
 	start = randint(1, 100)
 	length = randint(5, 10)
 	step = randint(1, 10)
-	items = [start]
+	items = [str(start)]
 	for i in range(1, length):
 		curr_item = start + i * step
-		items.append(curr_item)
+		items.append(str(curr_item))
 	return items
